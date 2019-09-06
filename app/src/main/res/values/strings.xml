@@ -12,6 +12,7 @@
     <string name="lb_item_menu_produtos">Produtos</string>
     <string name="lb_item_menu_clientes">Clientes</string>
     <string name="lb_item_menu_fornecedores">Fornecedores</string>
+    <string name="title_activity_produto">Produto</string>
 </resources>
 
 

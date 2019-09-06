@@ -8,6 +8,7 @@ import com.google.android.material.snackbar.Snackbar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
+import android.view.Menu;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -25,12 +26,14 @@ public class Principal extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
 
-
        textoPrincipal.setText(R.string.lb_campo_ola_mundo);
 
     }
 
 
+   public boolean onCreateOptionsMenu(Menu menu){
 
+        return super.onCreateOptionsMenu(menu);
+   }
 
 }

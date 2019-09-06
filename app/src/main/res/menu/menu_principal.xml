@@ -3,9 +3,15 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/item_principal"
+        android:id="@+id/item_menu_principal"
         android:title="@string/lb_item_menu_principal" />
-    <item android:title="@string/lb_item_menu_produtos" />
-    <item android:title="@string/lb_item_menu_clientes" />
-    <item android:title="@string/lb_item_menu_fornecedores" />
+    <item
+        android:id="@+id/item_menu_produtos"
+        android:title="@string/lb_item_menu_produtos" />
+    <item
+        android:id="@+id/item_menu_clientes"
+        android:title="@string/lb_item_menu_clientes" />
+    <item
+        android:id="@+id/item_menu_fornecedores"
+        android:title="@string/lb_item_menu_fornecedores" />
 </menu>
