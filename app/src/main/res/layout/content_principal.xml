@@ -8,4 +8,13 @@
     tools:context=".Principalq"
     tools:showIn="@layout/activity_principal">
 
+    <TextView
+        android:id="@+id/texto_principal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lb_campo_ola_mundo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
