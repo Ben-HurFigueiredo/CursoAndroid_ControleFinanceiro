@@ -8,6 +8,10 @@
     <string name="title_activity_menu_principal">MenuPrincipal</string>
     <string name="title_activity_produtos">produtos</string>
     <string name="title_activity_principalq">Principalq</string>
+    <string name="lb_item_menu_principal">Principal</string>
+    <string name="lb_item_menu_produtos">Produtos</string>
+    <string name="lb_item_menu_clientes">Clientes</string>
+    <string name="lb_item_menu_fornecedores">Fornecedores</string>
 </resources>
 
 
