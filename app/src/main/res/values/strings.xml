@@ -7,6 +7,7 @@
     <string name="lb_nome_cliente">Nome:</string>
     <string name="title_activity_menu_principal">MenuPrincipal</string>
     <string name="title_activity_produtos">produtos</string>
+    <string name="title_activity_principalq">Principalq</string>
 </resources>
 
 
