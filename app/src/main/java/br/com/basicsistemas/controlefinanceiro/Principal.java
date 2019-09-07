@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -32,6 +33,11 @@ public class Principal extends AppCompatActivity {
 
 
    public boolean onCreateOptionsMenu(Menu menu){
+
+       // Ativando Menu principal para a tela inicial do aplicativo.
+
+       MenuInflater inflater = getMenuInflater();
+       inflater.inflate(R.menu.menu_principal,menu);
 
         return super.onCreateOptionsMenu(menu);
    }

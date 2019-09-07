@@ -1,6 +1,6 @@
 package br.com.basicsistemas.controlefinanceiro.dao;
 
-
+import android.database.sqlite.SQLiteDatabase;
 
 public class ClienteDAO {
 
