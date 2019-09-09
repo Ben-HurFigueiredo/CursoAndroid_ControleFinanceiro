@@ -10,9 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".Clientes"
-            android:label="@string/title_activity_clientes"
+            android:name=".views.Cliente"
+            android:label="@string/title_activity_cliente"
             android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".views.Clientes"
+            android:label="@string/title_activity_clientes"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".views.Produto"
             android:label="@string/title_activity_produto"

@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Controle Financeiro</string>
     <string name="title_activity_principal">Principal</string>
-    <string name="lb_campo_ola_mundo">Olá Mundo</string>
+    <string name="lb_campo_ola_mundo">Controle Financeiro</string>
     <string name="title_activity_clientes">clientes</string>
     <string name="title_activity_cliente">Cliente</string>
     <string name="lb_nome_cliente">Nome:</string>
@@ -27,6 +27,12 @@
     <string name="menu_send">Send</string>
     <string name="lb_produtos_lista">Lista de Produtos</string>
     <string name="lb_clientes_lista">Lista de Clientes</string>
+    <string name="lb_produto_nome">Nome:</string>
+    <string name="lb_produto_fornecedor">Fornecedor</string>
+    <string name="lb_botao_gravar">Gravar</string>
+    <string name="hint_cliente_nome">Preencha o nome do cliente</string>
+    <string name="lb_cliente_cpf">CPF:</string>
+    <string name="hint_cliente_cpf">Insira o CPF</string>
 </resources>
 
 

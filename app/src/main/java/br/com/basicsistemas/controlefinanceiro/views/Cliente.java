@@ -10,20 +10,16 @@ import androidx.appcompat.widget.Toolbar;
 
 import android.view.View;
 
-import br.com.basicsistemas.controlefinanceiro.MenuPrincipal;
 import br.com.basicsistemas.controlefinanceiro.R;
 
-public class Produto extends MenuPrincipal {
+public class Cliente extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_produto);
+        setContentView(R.layout.activity_cliente);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
-
-
 
 
     }

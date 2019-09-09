@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".views.Cliente"
+    tools:showIn="@layout/activity_cliente">
+
+    <TextView
+        android:id="@+id/cliente_nome"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="@string/lb_nome_cliente"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txt_cliente_nome"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="@string/hint_cliente_nome"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/cliente_nome"
+        app:layout_constraintStart_toStartOf="@+id/cliente_nome"
+        app:layout_constraintTop_toBottomOf="@+id/cliente_nome" />
+
+    <TextView
+        android:id="@+id/cliente_cpf"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/lb_cliente_cpf"
+        app:layout_constraintEnd_toEndOf="@+id/txt_cliente_nome"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txt_cliente_nome"
+        app:layout_constraintTop_toBottomOf="@+id/txt_cliente_nome" />
+
+    <EditText
+        android:id="@+id/tx_cliente_cpf"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="@string/hint_cliente_cpf"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/cliente_cpf"
+        app:layout_constraintStart_toStartOf="@+id/cliente_cpf"
+        app:layout_constraintTop_toBottomOf="@+id/cliente_cpf" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:text="@string/lb_botao_gravar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tx_cliente_cpf"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tx_cliente_cpf"
+        app:layout_constraintTop_toBottomOf="@+id/tx_cliente_cpf"
+        app:layout_constraintVertical_bias="0.275" />
+</androidx.constraintlayout.widget.ConstraintLayout>

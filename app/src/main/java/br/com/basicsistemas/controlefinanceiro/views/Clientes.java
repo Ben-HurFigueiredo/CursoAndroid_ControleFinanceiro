@@ -1,5 +1,6 @@
-package br.com.basicsistemas.controlefinanceiro;
+package br.com.basicsistemas.controlefinanceiro.views;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -10,7 +11,10 @@ import androidx.appcompat.widget.Toolbar;
 
 import android.view.View;
 
-public class Clientes extends AppCompatActivity {
+import br.com.basicsistemas.controlefinanceiro.MenuPrincipal;
+import br.com.basicsistemas.controlefinanceiro.R;
+
+public class Clientes extends MenuPrincipal {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,8 +27,8 @@ public class Clientes extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                Intent intent = new Intent(Clientes.this, Cliente.class);
+                startActivity(intent);
             }
         });
     }
