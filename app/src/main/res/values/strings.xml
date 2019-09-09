@@ -14,8 +14,6 @@
     <string name="lb_item_menu_fornecedores">Fornecedores</string>
     <string name="title_activity_produto">Produto</string>
     <string name="title_activity_menu_drawer">menu_drawer</string>
-    <string name="navigation_drawer_open">Open navigation drawer</string>
-    <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="nav_header_title">Android Studio</string>
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
@@ -28,6 +26,7 @@
     <string name="menu_share">Share</string>
     <string name="menu_send">Send</string>
     <string name="lb_produtos_lista">Lista de Produtos</string>
+    <string name="lb_clientes_lista">Lista de Clientes</string>
 </resources>
 
 
