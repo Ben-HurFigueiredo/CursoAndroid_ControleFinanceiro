@@ -31,6 +31,7 @@ public class Cliente extends MenuPrincipal {
         setContentView(R.layout.activity_cliente);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
         c_DAO = new ClienteDAO(this);
         nome = findViewById(R.id.txt_cliente_nome);
         cpf = findViewById(R.id.tx_cliente_cpf);
@@ -46,7 +47,7 @@ public class Cliente extends MenuPrincipal {
 
         long id = c_DAO.gravar(c);
 
-        Toast.makeText(this, "Cliente " + id + "gravado com sucesso.", Toast.LENGTH_SHORT ).show();
+        Toast.makeText(this, "Cliente " + id + " gravado com sucesso.", Toast.LENGTH_SHORT ).show();
 
     }
 

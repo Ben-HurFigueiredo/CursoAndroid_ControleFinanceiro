@@ -11,7 +11,7 @@ public class ClienteDAO {
     private SQLiteDatabase bancoDeDados;
 
 
-        //Iniciando o banco de Dados com o contexto passando por parâmentro
+        //Iniciando o banco de Dados com o contexto passado por parâmentro
 
     public ClienteDAO(Context context){
 

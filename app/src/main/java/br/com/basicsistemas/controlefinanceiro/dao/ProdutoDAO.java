@@ -2,6 +2,7 @@ package br.com.basicsistemas.controlefinanceiro.dao;
 
 import android.content.ContentValues;
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
 import java.util.ArrayList;
@@ -9,7 +10,6 @@ import java.util.List;
 
 
 import br.com.basicsistemas.controlefinanceiro.entidade.ProdutoEntidade;
-import br.com.basicsistemas.controlefinanceiro.views.Produto;
 
 public class ProdutoDAO {
 
@@ -50,38 +50,38 @@ public class ProdutoDAO {
 
 
 
-    // Metodo para retornar todos os produtos cadastrados no banco de dados
+    // Método para retornar todos os produtos cadastrados no banco de dados.
 
-    /*
-
-    public List<ProdutoEntidade> listar{
+    public List<ProdutoEntidade> listar(){
 
         //Criando a lista para armazenar os dados retornados do banco de dados
-        List<ProdutoEntidade> produtos = new ArrayList<>();
+
+        List<ProdutoEntidade> listaProdutos = new ArrayList<>();
 
         //Retornando os valores da tabela de produtos das colunas id, nome, fornecedor. Não realizado nenhum filtro
 
         Cursor cursor = bancoDeDados.query("produto", new String[]{"id","nome","fornecedor"},
-                null, null, null, null, null);
+                null, null, null, null, null, null);
 
-        //Irá realizar a repetiçãode acordo com a quantidade de linhas no objeto cursor
 
+        //Irá realizar a repetição de acordo com a quantidade de linhas no objeto cursor
     while (cursor.moveToNext()){
 
+
+        // Criando o objeto da classe Produto Entidade que irá armazenar os dados do cursor.
         ProdutoEntidade produto = new ProdutoEntidade();
-        produto.setId(Cursor.getInt(0));
-        produto.setNome(Cursor.getString(1));
+        produto.setId(cursor.getInt(0));
+        produto.setNome(cursor.getString(1));
         produto.setFornecedor(cursor.getString(2));
 
         // adicionado o objeto produto na lista
-        produtos.add(produto);
+        listaProdutos.add(produto);
 
     }
     // retornando a lista com os produtos cadastrados
-       return produtos;
-    }
-*/
 
+       return listaProdutos;
+    }
 
 
 }

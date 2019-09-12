@@ -1,5 +1,6 @@
 package br.com.basicsistemas.controlefinanceiro.views;
 
+import android.content.Intent;
 import android.os.Bundle;
 import androidx.appcompat.widget.Toolbar;
 import android.view.View;
@@ -52,6 +53,9 @@ public class Produto extends MenuPrincipal {
         long id = p_DAO.gravar(p);
 
         Toast.makeText(this, "Produto " + id + " Gravado com sucesso.", Toast.LENGTH_LONG).show();
+
+        Intent intent = new Intent(this,Produtos.class);
+        startActivity(intent);
     }
 
 }

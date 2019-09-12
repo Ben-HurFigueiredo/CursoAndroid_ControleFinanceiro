@@ -31,7 +31,7 @@ public class Conexao extends SQLiteOpenHelper {
         sqLiteDatabase.execSQL("CREATE TABLE cliente(" +
                 "id integer primary key autoincrement," +
                 "nome varchar(80)," +
-                "cpf integer)");
+                "cpf char(14))");
 
     }
 

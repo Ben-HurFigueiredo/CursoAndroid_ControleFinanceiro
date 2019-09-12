@@ -7,9 +7,11 @@ public class ProdutoEntidade {
     private String fornecedor;
 
     public ProdutoEntidade() {
+
     }
 
     public ProdutoEntidade(int id, String nome, String fornecedor) {
+
         this.id = id;
         this.nome = nome;
         this.fornecedor = fornecedor;
@@ -38,4 +40,14 @@ public class ProdutoEntidade {
     public void setFornecedor(String fornecedor) {
         this.fornecedor = fornecedor;
     }
+
+
+    @Override
+    public String toString(){
+
+        return nome;
+    }
+
+
+
 }
