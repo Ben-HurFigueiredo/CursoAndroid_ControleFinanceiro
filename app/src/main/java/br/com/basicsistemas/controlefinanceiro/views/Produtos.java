@@ -4,19 +4,11 @@ import android.content.Intent;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
-
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
-import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import android.widget.Toast;
 
 import java.util.List;
 
@@ -29,7 +21,8 @@ public class Produtos extends MenuPrincipal {
 
     // Criando Variáveis para sincronização com os elementos da tela.
 
-    private ListView list;
+    private ListView list1;
+    private ListView list2;
     private ProdutoDAO p_DAO;
     private List<ProdutoEntidade> listaProdutos;
 
@@ -43,19 +36,31 @@ public class Produtos extends MenuPrincipal {
         setSupportActionBar(toolbar);
 
         // Iniciando os atributos de ligação com a tela.
-        list = findViewById(R.id.apresentacao_lista_produtos);
+        list1 = findViewById(R.id.ap_lista1_produtos);
+        list2 = findViewById(R.id.ap_lista2_produtos);
         p_DAO = new ProdutoDAO(this);
         listaProdutos = p_DAO.listar();
 
 
-        // Convertendo/ adaptando lista para o formato list view.
-        ArrayAdapter<ProdutoEntidade> adaptador;
+        // Convertendo / adaptando lista para o formato list view.
+        ArrayAdapter<ProdutoEntidade> adaptadorNomeDoProduto =
+                new ArrayAdapter<ProdutoEntidade>(this,
+                        android.R.layout.simple_list_item_1,listaProdutos);
 
-        adaptador = new ArrayAdapter<ProdutoEntidade>(this,  android.R.layout.simple_list_item_1,listaProdutos);
+        list1.setAdapter(adaptadorNomeDoProduto);
 
-        list.setAdapter(adaptador);
+        /*ArrayAdapter<ProdutoEntidade> adaptadorFornecedorDoProduto =
+                new ArrayAdapter<ProdutoEntidade>(this,
+                        android.R.layout.simple_list_item_2,listaProdutos);
+
+        list2.setAdapter(adaptadorFornecedorDoProduto);
+*/
+
+
 
         //Apresentação dos itens da lista.
+
+
 
 
 
