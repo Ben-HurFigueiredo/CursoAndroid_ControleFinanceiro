@@ -53,7 +53,7 @@
         android:layout_marginTop="16dp"
         android:ems="10"
         android:hint="@string/hint_txt_produto_fornecedor"
-        android:inputType="@string/lb_txt_produto_fornecedor"
+        android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="@+id/nome_produto_fornecedor"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/nome_produto_fornecedor"
