@@ -20,7 +20,7 @@ public class ClienteDAO {
 
     }
 
-    public void gravar(ClienteEntidade c){
+    public long gravar(ClienteEntidade c){
 
         ContentValues valores = new ContentValues();
 
@@ -28,7 +28,7 @@ public class ClienteDAO {
         valores.put("nome", c.getNome());
         valores.put("cpf", c.getCpf());
 
-        bancoDeDados.insert("cliente", null, valores);
+        return bancoDeDados.insert("cliente", null, valores);
 
     }
 
