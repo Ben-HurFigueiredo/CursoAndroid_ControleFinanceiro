@@ -10,6 +10,7 @@ import android.widget.TextView;
 public class Principal extends MenuPrincipal {
 
 
+    TextView textoPrincipal;
 
 
     @Override
@@ -19,8 +20,9 @@ public class Principal extends MenuPrincipal {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+       textoPrincipal = findViewById(R.id.texto_principal);
 
-       //textoPrincipal.setText(R.string.lb_campo_ola_mundo);
+       textoPrincipal.setText("Controle");
 
     }
 
