@@ -2,15 +2,19 @@ package br.com.basicsistemas.controlefinanceiro.dao;
 
 import android.content.ContentValues;
 import android.content.Context;
-import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
 import java.util.ArrayList;
 import java.util.List;
 
+
 import br.com.basicsistemas.controlefinanceiro.entidade.ProdutoEntidade;
+import br.com.basicsistemas.controlefinanceiro.views.Produto;
 
 public class ProdutoDAO {
+
+    // Criando variaveis de controle de banco de dados.
+
 
     private Conexao conexao;
     private SQLiteDatabase bancoDeDados;
@@ -18,18 +22,33 @@ public class ProdutoDAO {
 
     public ProdutoDAO(Context context){
 
+        // O parametro context será recebido da classe do Activity e enviada para a classe Conexão.
+
+        conexao = new Conexao(context);
+        bancoDeDados = conexao.getWritableDatabase();
+
+
+    }
+
+    public long gravar(ProdutoEntidade p){
+
         // Criando objeto para adicionar valores na tabela de produto
 
         ContentValues valores = new ContentValues();
 
-        valores.put("nome", produto.getNome());
-        valores.put("fornecedor", produto.getFornecedor());
+        // Adicionar os valores do paramentro dentro do Objeto Valores
+
+        valores.put("nome", p.getNome());
+        valores.put("fornecedor", p.getFornecedor());
 
 
-        return bancoDeDados.insert("produto", null, valores);
+        // Confirmando execução do comando Insert.
 
+      return  bancoDeDados.insert("produto", null, valores);
 
     }
+
+
 
     // Metodo para retornar todos os produtos cadastrados no banco de dados
 
